@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package passport;
+
+service PassportService {
+    rpc GetPassportInfos (PassportInfosRequest) returns (PassportInfos) {}
+}
+
+message PassportInfosRequest {
+    string passportNumber = 1;
+}
+
+message PassportInfos {
+    string passportNumber = 1;
+    string name = 2;
+    string surname = 3;
+    string birthDate = 4;
+    string birthPlace = 5;
+    string status = 6; // Exemple : "Valid", "Expired", "Revoked"
+}

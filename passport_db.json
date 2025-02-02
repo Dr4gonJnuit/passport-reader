@@ -1,0 +1,9 @@
+{
+  "AB1234567": {
+    "name": "John",
+    "surname": "Doe",
+    "birthDate": "1990-01-01",
+    "birthPlace": "New York",
+    "status": "valid"
+  }
+}
